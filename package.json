@@ -1,0 +1,24 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elfarv/StringCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elfarv/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/Elfarv/StringCalculator#readme",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "jest": "^23.6.0"
+  }
+}

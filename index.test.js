@@ -27,3 +27,9 @@ test(`should return "Negatives not allowed:-1" on an string  with sum of -1,2.`,
 test(`should return "Negatives not allowed:-4,-5" on an string  with sum of 2,-4,3,-5.`, () => {
   expect(add(`2,-4,3,-5`)).toBe("Negatives not allowed:-4,-5");
 });
+
+test(`should return 2 on an string  with sum of 1001 and 2.`, () => {
+  expect(add(`1001,2`)).toBe(2);
+});
+
+

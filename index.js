@@ -27,7 +27,9 @@ function sum(numberArray){
 			negativeNumber.push(numberArray[i]);
 		}
 		else{
-			
+			if(numberArray[i] > 1000){
+				numberArray.splice(i,1);
+			}
 			total += parseInt(numberArray[i]);
 		}
 	}

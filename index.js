@@ -6,7 +6,7 @@ function add(numbers){
 	if(numbers.length == 1) { 
 		return parseInt(numbers); 
 	}
-	var temp = numbers.replace(/\n/, ",");
+	var temp = numbers.replace(/\n/g, ",");
 	if(numbers.includes(",")){
 		var numberArray = temp.split(",");
 

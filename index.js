@@ -27,6 +27,7 @@ function sum(numberArray){
 			negativeNumber.push(numberArray[i]);
 		}
 		else{
+			
 			total += parseInt(numberArray[i]);
 		}
 	}

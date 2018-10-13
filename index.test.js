@@ -20,10 +20,10 @@ test(`should return 6 on an string  with sum of 1, 2 and 3.`, () => {
   expect(add(`1 \n2,3`)).toBe(6);
 });
 
-test(`should return Negatives not allowed:-1 on an string  with sum of -1,2.`, () => {
+test(`should return "Negatives not allowed:-1" on an string  with sum of -1,2.`, () => {
   expect(add(`-1,2`)).toBe("Negatives not allowed:-1");
 });
 
-test(`should return Negatives not allowed:-1 on an string  with sum of -1,2.`, () => {
-  expect(add(`2,-4,3, -5`)).toBe("Negatives not allowed:-4, -5");
+test(`should return "Negatives not allowed:-4,-5" on an string  with sum of 2,-4,3,-5.`, () => {
+  expect(add(`2,-4,3,-5`)).toBe("Negatives not allowed:-4,-5");
 });

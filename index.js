@@ -19,11 +19,21 @@ function add(numbers){
 
 function sum(numberArray){
 	var total = 0;
+	var negativeNumber = [];
+
 		
 	for(var i = 0; i < numberArray.length; i++){
-		total += parseInt(numberArray[i]);
+		if(numberArray[i] < 0){
+			negativeNumber.push(numberArray[i]);
+		}
+		else{
+			total += parseInt(numberArray[i]);
+		}
 	}
 
+	if(negativeNumber.length > 0){
+		return (`Negatives not allowed:${negativeNumber}`);
+	}
 	return total;
 }
 

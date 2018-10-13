@@ -7,18 +7,25 @@ function add(numbers){
 		return parseInt(numbers); 
 	}
 	if(numbers.includes(",")){
-		var numberArrays = numbers.split(",");
-		var total = 0;
-		
-		for(var i = 0; i < numberArrays.length; i++){
-			total += parseInt(numberArrays[i]);
-		}
-	
-		return total;
+		var numberArray = numbers.split(",");
+
+		return sum(numberArray)
 	} 
 	else{
 		return parseInt(numbers);
 	}
 }
+
+function sum(numberArray){
+	var total = 0;
+		
+	for(var i = 0; i < numberArray.length; i++){
+		total += parseInt(numberArray[i]);
+	}
+
+	return total;
+}
+
+
 
 module.exports = add;

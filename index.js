@@ -8,7 +8,13 @@ function add(numbers){
 	}
 	if(numbers.includes(",")){
 		var numberArrays = numbers.split(",");
-		return parseInt(numberArrays[0]) + parseInt(numberArrays[1]);
+		var total = 0;
+		
+		for(var i = 0; i < numberArrays.length; i++){
+			total += parseInt(numberArrays[i]);
+		}
+	
+		return total;
 	} 
 	else{
 		return parseInt(numbers);

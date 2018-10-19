@@ -1,5 +1,10 @@
 function add(numbers){
 	
+	
+	if(numbers.startswith("//"){
+		var delimiter = numbers.charAt(2);
+		
+	})
 	if(numbers.length == 0) {
 		 return 0;
 		}
